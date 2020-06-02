@@ -76,3 +76,50 @@ function experienceFetch(experience) {
   return result;
 }
 
+function achievementFetch(achievement) {
+  const result = `
+            <div class="achievement">
+                <span class="achievement-ico fa ${
+                  achievement.fa
+                } w3-xlarge dblue" style="${
+    achievement.css || "left: -6px"
+  };"></span>
+                <h2> ${achievement.title}</h2>
+                <span class="link">${
+                  achievement.linkTitle
+                }: <a class="blue" href="${achievement.link}">${
+    achievement.link
+  }</a></span><br/>
+                ${
+                  achievement.link2
+                    ? `<span class="link">${achievement.link2Title}: <a class="blue" href="${achievement.link2}">${achievement.link2}</a></span>`
+                    : ""
+                }
+            </div>
+            `;
+
+  return result;
+}
+
+achievementsContainer.innerHTML = data.achievements
+  .map(achievementFetch)
+  .join("");
+experienceContainer.innerHTML = data.experience.map(experienceFetch).join("");
+
+// MIGHT ADD THIS SOMTIME IN THE FUTURE
+
+// function skillsFetch(skill) {
+//   const result = `
+//             <div class="skill" style="padding:5px 15px; position:relative">
+//                 <h2>${skill.language}</h2>
+//                 <span class="skill-score"><b>${
+//                   skill.score
+//                 }</b> <small>/ 10</small></span>
+//                 <div class="skill-meter"><div class="skill-value" style="width:${
+//                   skill.score * 10
+//                 }%;"></div></div>
+//             </div>
+//             `;
+
+//   return result;
+// }
