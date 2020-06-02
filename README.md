@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/ishandeveloper/resume.svg)](https://github.com/ishandeveloper)
+
 # Resume
 This is a fully responsive web-based professional looking resume that I created. You can use this template to create your own resumes!
 
