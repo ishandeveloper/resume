@@ -107,6 +107,262 @@ td {
     text-align: left;
 }
 
+.summary-info {
+    text-align: justify;
+    font-size: 11pt;
+}
+
+.social {
+    opacity: .6;
+    padding: 7px 0px 4px 0px;
+}
+
+.btn {
+    border: none;
+    padding: 9px 25px;
+    font-size: 14pt;
+    background-color: #074a97;
+    color: #eee;
+    cursor: pointer;
+    font-family: 'Nunito', cursive;
+    border-radius: 3px;
+}
+
+.shadow {
+    box-shadow: 3px 5px 10px #666;
+
+}
+
+.blue {
+    color: #074a97;
+}
+
+.lblue {
+    color: #09f;
+}
+
+.dblue {
+    color: #032f62;
+}
+
+/* Main */
+main {
+    padding: 10px;
+}
+
+main h1 {
+    font-size: 23pt;
+    color: #074a97;
+}
+
+main>div {
+    margin-top: 20px;
+}
+
+main>div section {
+    padding: 20px 40px;
+}
+
+main h1>small {
+    font-size: 15pt;
+    color: #bbb;
+    margin-left: 10px;
+}
+
+main .experience h2,
+main .education h2 {
+    font-size: 18pt;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+main .experience h2 small,
+main .education h2 small {
+    font-size: 12pt;
+    color: #032f62;
+}
+
+main .experience h2::before {
+    content: '# ';
+    color: #09f;
+    font-size: 18pt;
+}
+
+main .education h2 {
+    font-size: 14pt;
+}
+
+main .education h2 small {
+    font-size: 11pt;
+    color: #074a97;
+}
+
+
+main .skills h2 {
+    font-size: 16pt;
+    color: #222;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.skills h2::before {
+    content: '# ';
+    color: #09f;
+    font-size: 18pt;
+}
+
+.skill {
+    color: #444;
+    margin-bottom: 0px;
+    font-size: 13pt;
+    margin-right: 7px;
+    padding-bottom: 9px;
+    /* padding-left: 12px; */
+}
+
+div.skill {
+    padding-left: 10px;
+}
+
+.skill a {
+    color: #074a97
+}
+
+.skill-title {
+    font-weight: bold;
+    display: block;
+}
+
+.school {
+    margin-bottom: 20px;
+}
+
+.achievements .achievement {
+    padding-left: 25px;
+    position: relative;
+    border-left: 1px solid #333;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.achievements h2 {
+    font-size: 18pt;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    color: #333;
+}
+
+.achievement-ico {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 6px 0px;
+}
+
+.achievements .link {
+    font-size: 12pt;
+}
+
+.experience-container .timespan {
+    font-size: 12pt;
+    color: #222;
+    padding-left: 20px;
+}
+
+.experience-container .timespan small {
+    margin-left: 5px;
+    color: #444;
+}
+
+.experience-description {
+    padding: 2px 20px;
+    color: #333;
+}
+
+.company {
+    margin-bottom: 12px;
+}
+
+.projects h2 {
+    font-size: 16pt;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    color: #333;
+}
+
+.projects h2 small {
+    font-size: 11pt;
+    color: #999;
+}
+
+.projects h2 small::before {
+    content: '/ ';
+}
+
+.project-header {
+    position: relative;
+}
+
+.project-stack>* {
+    display: block;
+}
+
+.project {
+    position: relative;
+}
+
+.project {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.project-info {
+    margin-left: 50px;
+    padding-left: 15px;
+}
+
+.project-logo {
+    top: 0px;
+    position: absolute;
+    left: 0;
+}
+
+footer {
+    /* border-left: 20px solid var(--primary-color); */
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 13px 50px;
+    text-align: left;
+    color: #333;
+}
+
+.fixed-buttons-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.fixed-buttons-container>button,
+.fixed-buttons-container>a {
+    margin: 20px 7px;
+}
+
+::-webkit-scrollbar {
+    background-color: #ddd;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #074a97;
+}
+
+.mobile-view {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     .hide-print {
         display: none;
