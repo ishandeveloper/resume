@@ -58,3 +58,21 @@ const data = {
   ],
 };
 
+const experienceContainer = document.querySelector(".experience-container");
+const achievementsContainer = document.querySelector(".achievements-container");
+
+function experienceFetch(experience) {
+  const result = `
+            <div class="company">
+                <h2>${experience.post} &nbsp;<a target="_blank" rel="noopener" href="${experience.link}"><small>@ ${experience.company}</small></a></h2>
+                <div class="timespan"><span class="fa fa-calendar blue"></span> &nbsp; ${experience.dates},<small> ${experience.span}</small></div>
+                <div class="experience-description">
+                    <span class="stack blue">Stack: ${experience.stack}</span><br>
+                    ${experience.description}
+                </div>
+            </div>
+            `;
+
+  return result;
+}
+

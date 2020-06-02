@@ -183,7 +183,7 @@ main .education h2 small {
 }
 
 main .experience h2::before {
-    content: '# ';
+    content: 'ϟ ';
     color: #09f;
     font-size: 18pt;
 }
