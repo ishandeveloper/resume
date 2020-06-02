@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --primary-color:#035aa6;
+    --text-color:#000000;
+}
+
+*{
+    font-family: 'Nunito';
+}
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Nunito';
+}
+
+.experience-projects hr {
+    margin: 10px 0px;
+}
+
+header {
+    width: 100%;
+    border-left: 20px solid var(--primary-color);
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center
+}
+
+.left {
+    text-align: left
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.name {
+    font-family: 'Poppins';
+    font-size: 2.5em;
+    color: var(--primary-color);
+    border-bottom: 2px solid #ddd;
+    margin: 0px;
+    display: inline-block;
+    padding: 0px 15px 0px 2px;
+}
+
+.address {
+    font-size: 12pt;
+    padding-top: 16px;
+    color: var(--text-color);
+    opacity: .9
+}
+
+td:first-child {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.address>div {
+    display: block;
+}
+
+.position {
+    margin-top:10px;
+    font-size: 1.25em;
+    display: block;
+    /* color: #142850; */
+    font-family: 'Nunito';
+
+}
+
+.position::before {
+    content: ' ';
+    color: #074a97;
+    font-size: 1em;
+}
+.website-link{
+    max-width: 30%;
+    flex:0 0 28%;
+}
+td {
+    padding: 3px 7px;
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .hide-print {
+        display: none;
+    }
+    .name{
+        text-align: left;
+    }
+    .position{
+        font-size: 1em;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .links{
+        text-align: left;
+        font-size: 1.15em;
+        margin:5px 0;
+    }
+    .website-link {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    header{
+    border-left: 10px solid var(--primary-color);
+
+    }
+    
+}
+
+@media print {
+
+    html,
+    body {
+        margin: 0px;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: #ddd;
+        width: 0px;
+    }
+
+    .summary-info {
+        font-size: 12pt;
+    }
+
+    .hide-print {
+        display: none;
+    }
+
+    @page {
+        margin: 0px;
+    }
+}
