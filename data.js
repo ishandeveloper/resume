@@ -1,6 +1,15 @@
 const data = {
   experience: [
     {
+      post: "Software Development Engineer",
+      company: "PuStack",
+      link: "https://pustack.com/",
+      dates: "July 2020 - Present",
+      span: "1 Month",
+      stack: "Flutter, Dart, UI/UX",
+      description: `Under this role, I will be responsible for provisioning scalable infrastructure enabling both the business and its customers through the means of cutting edge technological products. My primary tech stack for this role would be Flutter.`,
+    },
+    {
       post: "Technical Author",
       company: "Cypher Eruption",
       link: "https://cyphereruption.net",
